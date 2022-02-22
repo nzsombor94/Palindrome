@@ -12,6 +12,18 @@ public class Palindrome {
 	}
 
 	public static boolean isPalindrome(String input) {
+	String myWord = input;
+		
+		int i = 0;
+		int j = myWord.length() - 1;
+		
+		while (i < j) {
+			if (myWord.charAt(i) != myWord.charAt(j))
+				return false;
+			
+			i++;
+			j--;
+		}
 		return true;
 	}
 }
