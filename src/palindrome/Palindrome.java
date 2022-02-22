@@ -26,4 +26,11 @@ public class Palindrome {
 		}
 		return true;
 	}
+	
+public static String reverseInput(String input) {
+		String myWord = input;
+		String newString = " ";
+		char letter;
+		return newString;
+	}
 }
