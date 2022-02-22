@@ -31,6 +31,12 @@ public static String reverseInput(String input) {
 		String myWord = input;
 		String newString = " ";
 		char letter;
+		
+		for (int i = 0; i < myWord.length(); i++) {
+			letter = myWord.charAt(i);
+			newString = letter + newString;
+		}
+		
 		return newString;
 	}
 }
