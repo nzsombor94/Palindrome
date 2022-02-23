@@ -8,7 +8,11 @@ public class Palindrome {
 		
 		Scanner scanner = new Scanner(System.in);
 		String input = scanner.nextLine();
-
+		
+		if (isPalindrome(input)) {
+			System.out.println("A megadott szó palindrom.");
+		} else 
+			System.out.println(reverseInput(input));
 	}
 
 	public static boolean isPalindrome(String input) {
@@ -28,6 +32,7 @@ public class Palindrome {
 	}
 	
 public static String reverseInput(String input) {
+	
 		String myWord = input;
 		String newString = " ";
 		char letter;
@@ -36,7 +41,6 @@ public static String reverseInput(String input) {
 			letter = myWord.charAt(i);
 			newString = letter + newString;
 		}
-		
 		return newString;
 	}
 }
